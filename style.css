@@ -1,0 +1,80 @@
+/* Reset & Base Styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background: url('nitw_building.jpg') center/cover no-repeat;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;
+}
+
+/* Dark Overlay for better visibility */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Transparent Black */
+    z-index: 1;
+}
+
+/* Main Container */
+.container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Glowing effect */
+}
+
+/* Highlighted Text */
+h1 span {
+    color: #ffcc00; /* Golden Yellow */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff5722, #ff9800);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.5);
+}
+
+/* Hover Effect */
+.button:hover {
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+    transform: scale(1.1);
+}
+
+
+

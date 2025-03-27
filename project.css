@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box; 
+ }
+ body{
+     margin: 0;
+     padding: 0;
+ }
+ .grid-container {
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 100vh;
+    height: 100vh; /* Ensures full viewport height */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background: linear-gradient(to right, #008080, #FFFFFF); /* Light Gray */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 1.1rem;
+    border-right: 1px solid #ffcc00; /* Golden border */
+    height: 100vh; /* Full height */
+}
+
+/* Map Section */
+.map {
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4; /* Light Gray */
+}
+
+/* Thin Header Styling */
+.header {
+    background: linear-gradient(to right, #66a3ff, #a5caef 50%, #66a3ff);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    padding: 1px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffcc00; /* Yellow underline */
+}
+
+/* Title Styling */
+.title {
+    font-family: 'Arial Black', sans-serif;
+    color: #ffcc00; /* Golden color */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Home Button Styling */
+.home-button {
+    text-decoration: none;
+    background: #ffcc00; 
+    color: #1c7fe1; 
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s ease;
+}
+
+.home-button:hover {
+    background: #e6b800; /* Slightly darker yellow */
+}
+
+
+.overlay-container#feature-info::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #f8f9fa transparent transparent transparent; /* Matching background */
+}
+
+
+
+
+
+
+

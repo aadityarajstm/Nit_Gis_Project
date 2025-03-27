@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min">
+    <title>Open_Layer Example</title>
+    <link rel="stylesheet" href="ol.css">
+    <link rel="stylesheet" href="./project.css">
+    <header class="header">
+        <h1>GIS Project</h1>
+        <a href="index.html" class="home-button">Home</a>
+    </header>
+       
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="sidebar">
+                <h2>Base Layers</h2>
+        <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard<br>
+        <input type="radio" name="baseLayerRadioButton" value="OSMHumanitarian">OSM Humanitarian<br>
+        <input type="radio" name="baseLayerRadioButton" value="OSMCyclosm">OSM Cyclosm<br>
+        <input type="radio" name="baseLayerRadioButton" value="BingMap">BingMap<br>
+        <input type="radio" name="baseLayerRadioButton" value="Stadia">Stadia<br>
+
+                <h2>Thematic Layers</h2>
+                <input type="checkbox" id="checkGeoJSON">
+<label for="checkGeoJSON" style="cursor: pointer">GeoJSON Layer</label><br>
+
+<input type="checkbox" id="checkKML">
+<label for="checkKML" style="cursor: pointer">KML Layer</label><br>
+
+<input type="checkbox" id="checkLULC">
+<label for="checkLULC" style="cursor: pointer">NITW LULC Layer</label>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div id="js-map" class="map"></div>
+                   </div>
+    </div>
+    <div class="overlay-container">
+        <span class="overlay-text" id="feature-name"></span><br>
+        <span class="overlay-text" id="feature-info"></span><br>
+
+    </div>
+    <script src="ol.js"></script>
+    <script src="./main.js"></script>
+    <script src="bootstrap.min"></script>
+</body>
+</html>
